@@ -6,16 +6,16 @@
 
 package com.jcertif.abj2014.intro.spring.data.after;
 
-import com.jcertif.abj2014.intro.spring.data.model.Speaker; 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import com.jcertif.abj2014.intro.spring.data.model.Sessions;
+import com.jcertif.abj2014.intro.spring.data.model.Speaker;
+import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
  * @author Komi Serge Innocent <komi.innocent@gmail.com>
  */
-public interface SpeakerRepository extends CrudRepository<Speaker, Long>{
+public interface SessionsRepository extends CrudRepository<Sessions, Long>{
     
-    Page<Speaker> findByLastname(String lastname, Pageable pageable);
+	List<Sessions> findBySpeaker(Speaker speaker);
 }
