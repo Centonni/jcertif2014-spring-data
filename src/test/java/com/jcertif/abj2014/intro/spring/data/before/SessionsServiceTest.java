@@ -5,6 +5,7 @@
  */
 package com.jcertif.abj2014.intro.spring.data.before;
 
+import com.jcertif.abj2014.intro.spring.data.AbstractTest;
 import com.jcertif.abj2014.intro.spring.data.model.Sessions;
 import com.jcertif.abj2014.intro.spring.data.model.Speaker;
 import java.util.List;
@@ -20,7 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  *
  * @author Komi Serge Innocent <komi.innocent@gmail.com>
  */
-public class SessionsServiceTest {
+public class SessionsServiceTest extends AbstractTest{
 
     @Autowired
     SessionsService sessionService;
